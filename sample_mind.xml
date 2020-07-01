@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<aiml>
+    <category name="приветствие" type="greeting" final="yes">
+        <pattern>Здравствуйте</pattern>
+        <pattern>Здрасте</pattern>
+        <pattern>Добрый день</pattern>
+        <pattern>Привет</pattern>
+        <pattern>Доброе утро</pattern>
+        <pattern>Добрый вечер</pattern>
+        <pattern>Трям</pattern>
+        <pattern>Доброго времени суток</pattern>
+        <pattern>Доброе время суток</pattern>
+        <pattern>Привет еще раз</pattern>
+        <pattern>Здравствуйте еще раз</pattern>
+        <pattern>еще раз здравствуйте</pattern>
+    </category>
+    <category name="определение" type="attribute" mood="good">
+        <pattern>Добрый</pattern>
+    </category>
+    <category name="не исправно" type="predicate" mood="bad" final="yes">
+        <pattern>не работает</pattern>
+        <pattern>не подключается</pattern>
+        <pattern>барахлит</pattern>
+        <pattern>сломался</pattern>
+    </category>
+    <category name="не возможно" type="compound predicate part 1" mood="bad" final="yes">
+        <pattern>не могу</pattern>
+        <pattern>не можем</pattern>
+    </category>
+    <category name="возможно" type="compound predicate part 1" mood="good" final="yes">
+        <pattern>могу</pattern>
+        <pattern>можешь</pattern>
+        <pattern>хочешь</pattern>
+    </category>
+    <category name="infinifive" type="infinitive" final="yes">
+        <pattern>подключиться</pattern>
+        <pattern>подключить</pattern>
+        <pattern>распечатать</pattern>
+        <pattern>приехать</pattern>
+        <pattern>начать</pattern>
+    </category>
+    <category name="subject" type="subject" part="pronoun" final="yes">
+        <pattern>я</pattern>
+        <pattern>ты</pattern>
+        <pattern>он</pattern>
+        <pattern>она</pattern>
+        <pattern>оно</pattern>
+        <pattern>мы</pattern>
+        <pattern>вы</pattern>
+        <pattern>они</pattern>
+    </category>
+    <category name="сервер" type="subject" part="noun" final="yes">
+        <pattern>Дальняя удаленка</pattern>
+        <pattern>Ближняя удаленка</pattern>
+        <pattern>удаленка</pattern>
+        <pattern>сервер</pattern>
+    </category>
+    <category name="компьютер" type="subject" part="noun" final="yes">
+        <pattern>комп</pattern>
+        <pattern>компьютер</pattern>
+        <pattern>ноут</pattern>
+        <pattern>ноутбук</pattern>
+    </category>
+    <category name="сервер" type="subject" part="noun" final="no">
+        <pattern>Дальняя</pattern>
+        <pattern>Ближняя</pattern>
+    </category>
+    <category name="сервис" type="subject" part="noun" final="yes">
+        <pattern>почта</pattern>
+        <pattern>интернет</pattern>
+    </category>
+    <category name="периферия" type="subject" part="noun" final="yes">
+        <pattern>принтер</pattern>
+        <pattern>сканер</pattern>
+        <pattern>клавиатура</pattern>
+        <pattern>мышь</pattern>
+        <pattern>мышка</pattern>
+    </category>
+    <category name="prepositional object" type="prepositional object" part="noun" final="yes">
+        <pattern>к принтеру</pattern>
+        <pattern>к Дальней удаленке</pattern>
+        <pattern>на Дальней удаленке</pattern>
+        <pattern>на Дальнюю удаленку</pattern>
+        <pattern>к Ближней удаленке</pattern>
+        <pattern>на Ближней удаленке</pattern>
+        <pattern>на Ближнюю удаленку</pattern>
+        <pattern>на почту</pattern>
+        <pattern>к интернет</pattern>
+        <pattern>на комп</pattern>
+        <pattern>к компу</pattern>
+        <pattern>в комп</pattern>
+        <pattern>в компе</pattern>
+        <pattern>на ноут</pattern>
+    </category>
+    <category name="prepositional object" type="prepositional object" part="pronoun" final="yes">
+        <pattern>у меня</pattern>
+        <pattern>ко мне</pattern>
+        <pattern>у тебя</pattern>
+        <pattern>к тебе</pattern>
+        <pattern>у него</pattern>
+        <pattern>у нее</pattern>
+        <pattern>к нему</pattern>
+        <pattern>к ней</pattern>
+        <pattern>у нас</pattern>
+        <pattern>к нам</pattern>
+        <pattern>у вас</pattern>
+        <pattern>к вам</pattern>
+        <pattern>у них</pattern>
+        <pattern>к ним</pattern>
+    </category>
+    <category name="prepositional object" type="prepositional object" final="no">
+        <pattern>к Дальней</pattern>
+        <pattern>на Дальней</pattern>
+        <pattern>на Дальнюю</pattern>
+        <pattern>к Ближней</pattern>
+        <pattern>на Ближней</pattern>
+        <pattern>на Ближнюю</pattern>
+    </category>
+    <category name="adv mod of manner" type="manner" final="no">
+        <pattern>удаленно</pattern>
+        <pattern>быстро</pattern>
+        <pattern>срочно</pattern>
+    </category>
+</aiml>
